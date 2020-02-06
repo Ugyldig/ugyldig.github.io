@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Настройки страницы -->
+	<meta charset="utf-8">
+	<title>Index_html</title>
+	
+    <!-- Параметры для мобильного телефона -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS внешнее подключение -->
+    <link rel="stylesheet" href="css/info.css">
+	<link rel="stylesheet" href="css/column.css">
+	<link rel="stylesheet" href="css/slides.css">
+
+
+	<script src="js/jquery-latest.min.js"></script>
+    <script src="js/jquery183.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+		$(function () {
+		  // Слайды
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+	</script>
+    
+</head>
+<body class="homepage">
+<div class="body_wrap">
+
+<!--Header-->
+<header >
+	<div class="header_wrap info">
+		<div class="row">
+			<div id="menu_css">
+				<ul>
+				   <li class='active'><a href="index.html">Главная страница</a></li>
+				   <li><a href="about.html">О нас</a></li>
+				   <li><a href="projects.html">Проекты</a></li>
+				   <li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			<a href='index.html' class="logotype"><img src="https://turbologo.ru/blog/wp-content/uploads/2018/03/prozrachniy-logo-678x381.png" /></a>
+		</div>
+	</div>
+</header>
+<div class="sliders">
+	<!-- Слайдшоу-->
+	<div class="callbacks_container" >
+		<ul class="rslides" id="slider">
+			<li>
+				<img src="https://1house.by/wp-content/uploads/2017/01/Perspektiva-12.jpg" alt="">
+				<div class="frame">
+					<h1>Title</h1>
+					<span > Description<br> Description.</span>
+					<div class="price">Price</div>
+				</div>
+			</li>
+			<li>
+				<img src="https://turbo.network/hqroom/image/upload/c_limit,f_auto,h_10000,q_15,w_1500/v1570624328/post/3d6d7cb9f7c865fbc0aa4264/a7657bad23539cfcGicI9HZtC07mZLIK.jpg" alt="">
+				<div class="frame">
+					<h1>Title</h1>
+					<span > Description.</span>
+					<div class="price">Price</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+<!--Контейнер-->
+<section id="container">
+	<div class="container_wrap">
+		<!-----------------Первый бокс с содержимым-------------------->
+		<section class="contentbox boxstyle2 box1">
+			<div class="info">
+				<div class="row box_wrap t_center">
+					<h1>Hello!</h1>
+					<span>Welcome to the site!</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum volutpat blandit. Proin facilisis urna eget velit vestibulum hendrerit. Maecenas nec lorem iaculis, blandit neque ac, interdum neque. Quisque ac elit porta, molestie leo id, commodo erat. Ut scelerisque sollicitudin justo, eu fringilla est lacinia at. Sed eu sem vitae mi ornare porta id sit amet arcu. Maecenas fermentum lectus orci, sit amet molestie risus pellentesque in. Fusce sodales ligula sit amet neque euismod commodo. Nunc non massa eget risus porttitor cursus.</p>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------Второй бокс с содержимым-------------------->
+		<section class="contentbox boxstyle1 box2">
+			<div class="info">
+				<div class="row box_wrap">
+					<h2>Lorem Ipsum</h2>
+					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum volutpat blandit.</span>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------Третий контейнер с содержимым-------------------->
+		<section class="contentbox box3">
+			<div class="info">
+				<div class="row box_wrap">
+					<div class="row">
+						<div class="column_one_three">
+							<div class="column_wrap wrapper">
+								<h3>Lorem Ipsum</h3>
+								<span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum volutpat blandit. Proin facilisis urna eget velit vestibulum hendrerit. Maecenas nec lorem iaculis, blandit neque ac, interdum neque. Quisque ac elit porta, molestie leo id, commodo erat. Ut scelerisque sollicitudin justo, eu fringilla est lacinia at. Sed eu sem vitae mi ornare porta id sit amet arcu. Maecenas fermentum lectus orci, sit amet molestie risus pellentesque in. Fusce sodales ligula sit amet neque euismod commodo. Nunc non massa eget risus porttitor cursus.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_three">
+							<div class="column_wrap wrapper">
+								<h3>Lorem Ipsum</h3>
+								<span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum volutpat blandit. Proin facilisis urna eget velit vestibulum hendrerit. Maecenas nec lorem iaculis, blandit neque ac, interdum neque. Quisque ac elit porta, molestie leo id, commodo erat. Ut scelerisque sollicitudin justo, eu fringilla est lacinia at. Sed eu sem vitae mi ornare porta id sit amet arcu. Maecenas fermentum lectus orci, sit amet molestie risus pellentesque in. Fusce sodales ligula sit amet neque euismod commodo. Nunc non massa eget risus porttitor cursus.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_three">
+							<div class="column_wrap wrapper">
+								<h3>Lorem Ipsum</h3>
+								<span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum volutpat blandit. Proin facilisis urna eget velit vestibulum hendrerit. Maecenas nec lorem iaculis, blandit neque ac, interdum neque. Quisque ac elit porta, molestie leo id, commodo erat. Ut scelerisque sollicitudin justo, eu fringilla est lacinia at. Sed eu sem vitae mi ornare porta id sit amet arcu. Maecenas fermentum lectus orci, sit amet molestie risus pellentesque in. Fusce sodales ligula sit amet neque euismod commodo. Nunc non massa eget risus porttitor cursus.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------Четвёртый контейнер с содержимым-------------------->
+		<section class="contentbox boxstyle2 box4">
+			<div class="info">
+				<div class="row box_wrap">
+					<div class="header">
+						<div class="wrapper">
+							<h2>Possible options</h2>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlYOVewXvqSPUv4bwpwiqB4TbDaEoOQTlXIw2-QqUdIjS54Uan" alt=""/>
+								<div class="price">249,000 USD</div>
+								<h3>Lorem Ipsum</h3>
+								<p>Maecenas ac porttitor purus, ut sagittis nisl. Fusce vel tortor pharetra, lacinia purus et, consectetur metus. Nunc ultrices orci non pretium vestibulum. Vivamus mi ante, pulvinar quis mattis ut, molestie vitae tortor. In vel auctor urna, eu consectetur nisi. Suspendisse gravida quis dolor nec congue. Sed sed arcu ut nibh pulvinar congue.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://datafile5.arkadia.com/pictures/properties/fullsize/1-6956806-1002384170753597814.jpg" alt=""/>
+								<div class="price">174,000 USD</div>
+								<h3>Lorem Ipsum</h3>
+								<p>Maecenas ac porttitor purus, ut sagittis nisl. Fusce vel tortor pharetra, lacinia purus et, consectetur metus. Nunc ultrices orci non pretium vestibulum. Vivamus mi ante, pulvinar quis mattis ut, molestie vitae tortor. In vel auctor urna, eu consectetur nisi. Suspendisse gravida quis dolor nec congue. Sed sed arcu ut nibh pulvinar congue.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://vip-1gl.ru/vipberrrt/6412dizajn-fasadov-zagorodnyh-domov.jpg" alt=""/>
+								<div class="price">152,000 USD</div>
+								<h3>Lorem Ipsum</h3>
+								<p>Maecenas ac porttitor purus, ut sagittis nisl. Fusce vel tortor pharetra, lacinia purus et, consectetur metus. Nunc ultrices orci non pretium vestibulum. Vivamus mi ante, pulvinar quis mattis ut, molestie vitae tortor. In vel auctor urna, eu consectetur nisi. Suspendisse gravida quis dolor nec congue. Sed sed arcu ut nibh pulvinar congue.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://turbo.network/hqroom/image/upload/c_limit,f_auto,h_10000,q_15,w_1600/v1573735994/post/d63538e017d98621ec7dff5d/382b20acd97adcfbxnKamnGEf7Q6rRBa.jpg" alt=""/>
+								<div class="price">128,000 USD</div>
+								<h3>Lorem Ipsum</h3>
+								<p>Maecenas ac porttitor purus, ut sagittis nisl. Fusce vel tortor pharetra, lacinia purus et, consectetur metus. Nunc ultrices orci non pretium vestibulum. Vivamus mi ante, pulvinar quis mattis ut, molestie vitae tortor. In vel auctor urna, eu consectetur nisi. Suspendisse gravida quis dolor nec congue. Sed sed arcu ut nibh pulvinar congue.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+	</div>
+</section>
+
+<!--Подвал сайта-->
+<footer>
+	<div class='embed-container maps' style="margin: 0; padding: 0;">
+		<iframe src="" width="100%" height="250px" frameborder="0" style="border: 0;"></iframe>
+	</div>
+	<div class="footer_wrap">
+		<div class="info">
+			<div class="row">
+				<h3>Связаться</h3>
+				<span>Телефон / Ввести номер телефона </span></br>
+				<span>Email / Ввести почту  </span></br>
+				<span>Адрес </span></br>
+				<span><strong>Информация </strong></span>
+				<ul class="media_buttons">
+					<li><a href="https://twitter.com/?lang=ru"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li><a href="https://www.linkedin.com/?trk=nav_header_logo"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li><a href="https://www.google.ru"><i class="fa fa-google-plus"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	<!-- Гугл карты -->
+	<script>
+		$('.maps').click(function () {
+		$('.maps iframe').css("pointer-events", "auto");
+	});
+
+	$( ".maps" ).mouseleave(function() {
+	  $('.maps iframe').css("pointer-events", "none"); 
+	});
+	</script>
+	
+</div>
+</body>
+</html>
