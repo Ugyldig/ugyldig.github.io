@@ -1,4 +1,4 @@
-﻿input, textarea {border:0; padding:0; margin:0; outline: 0;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
 iframe {border:0; margin:0; padding:0;}
 input, textarea, select {margin:0; padding:0px;}
 
@@ -9,22 +9,23 @@ input, textarea, select {margin:0; padding:0px;}
 }
 
 
-html { -webkit-text-size-adjust: none;}
+html { -webkit-text-size-adjust: none;
+       overflow: auto}
 
-a {color: #0bd2ff;
+a {color: #000000;
   text-decoration: none;}
 a:hover {text-decoration: underline;}
 
-h1,h2,	{font-size: 25px;
-        line-height: 25px;}
+h1,h2,	{font-size: 45px;
+        line-height: 45px;}
 
-h3, h4	{font-size: 20px;
-         line-height: 20px;}
-h5, h6	{font-size: 16px;
-        line-height: 16px;}
+h3, h4	{font-size: 40px;
+         line-height: 40px;}
+h5, h6	{font-size: 36px;
+        line-height: 36px;}
 
-p{margin: 10px 0;
-  color: #0099CC;}
+p{margin: 30px 0;
+  color: #000000;}
 
 .t_center{text-align: center;}
 
@@ -48,7 +49,7 @@ section:before{clear: both;
        clear: both; visibility: hidden; }
 
 .price{font-size: 40px;
-      color: #000;
+      color: #990000;
       line-height: 50px;
       margin-bottom: 20px;}
 /* -------Body Документа------ */
@@ -59,7 +60,8 @@ body {width:100%;
       margin:0;}
 body {background: #fffffcc;
       color: #1c1313;
-     font: 14px/25px Arial, Helvetica, sans-serif;font-family: Montserrat, sans-serif;}
+     font: 17px/35px Arial, Helvetica, sans-serif;
+     font-family: Montserrat, sans-serif;}
 body .body_wrap{}
 
 /* ---------Header-----------*/
@@ -75,9 +77,9 @@ header .logotype img{display: inline-block;
 @media all and (max-width: 768px){
 	header{padding: 0;}
 	header .logotype{text-align:center;
-                         width: 100%;}
+                   width: 100%;}
 	header .logotype img{display:block;
-                             max-width: 200px;}
+                      max-width: 200px;}
 }
 
 /* ------Контейнер------*/
@@ -98,7 +100,7 @@ header .logotype img{display: inline-block;
                              display: inline-block;}
 
 .contentbox.boxstyle1{background-attachment:fixed; 
-                      background-image: url(https://img.fonwall.ru/o/47/koja-chernaya-poverhnost-blesk.jpg); 
+                      background-image: url(images/background.jpg); 
                       background-color: #222;
                       color:#fff;
                       }
@@ -114,12 +116,12 @@ header .logotype img{display: inline-block;
 .homepage .contentbox.box1 span{font-size: 40px;
                                 line-height: 1.2;
                                 font-weight: 500;}
-.homepage .contentbox.box1 p {font-size: 22px;
+.homepage .contentbox.box1 p {font-size: 27px;
                               margin-top: 40px;}
 .contentbox.box1 .post {text-align: initial;
                         margin-bottom: 30px;}
-.contentbox.box1 .post span{font-size: 20px;}
-.contentbox.box1 .post p{font-size: 16px;
+.contentbox.box1 .post span{font-size: 25px;}
+.contentbox.box1 .post p{font-size: 20px;
                          margin-top: 10px;}
 .contentbox.box1 .post img{border-radius: 50%;}
 
@@ -130,7 +132,7 @@ header .logotype img{display: inline-block;
                     font-weight: 500;
                     color: #fff;
                     margin-bottom: 20px;}
-.contentbox.box2 span{font-size: 20px;
+.contentbox.box2 span{font-size: 25px;
                       line-height: 1.2;
                       font-weight: 500;}
 
@@ -140,10 +142,9 @@ header .logotype img{display: inline-block;
                     font-weight: 500;
                     margin-bottom: 20px;
                     text-transform: uppercase;}
-.contentbox.box3 span{font-size: 20px;
+.contentbox.box3 span{font-size: 25px;
                       line-height: 1.2;
                       font-weight: 500;
-                      color: #00333;
                      margin-bottom: 20px;}
 .contentbox.box3 .wrapper{}
 
@@ -177,16 +178,16 @@ article img{height: auto;
             border: none;}
 article .art_header{}
 article .art_content{padding: 40px 60px 0 60px;}
-article .art_content blockquote {border-left: 3px solid #1c7791;
+article .art_content blockquote {border-left: 3px solid #ffffff;
                                  font-size: 18px;
                                  margin: 0 50px;
                                  font-style: italic;
-                                 color: #666;
+                                 color: #fff;
                                  padding-left: 20px;}
 article .art_content ol {float: left;
                          text-align: justify;
                          margin: 10px 50px;
-                         font-size: 16px;
+                         font-size: 20px;
                          list-style-type: circle;}
 
 article .entry_title {text-align: center;
@@ -205,27 +206,27 @@ article .info a:hover{ text-decoration: underline;}
 /* ---------Подвал сайта-------- */
 
 footer{text-align: center;
-       background-image: url(https://fanparty.ru/fanclubs/supernatural/gallery/645436_supernatural.jpg);
+       background: url(https://img1.goodfon.ru/wallpaper/nbig/9/e2/chernyy-fon-ulichnye-fonari-svet.jpg);
        min-height: 650px;
      
        }
 footer a{color: #fff;}
 footer .footer_wrap{color: #fff;
-                    font-size: 13px;
+                    font-size: 20px;
                     padding: 30px 20px;}
 footer .footer_wrap h3{margin-bottom: 10px;}
 footer ul.media_buttons{margin-top: 70px;}
 footer ul.media_buttons li{display: inline-block;}
 footer ul.media_buttons li a{padding-top: 15px;
                              display: block;
-                             width: 67px;
-                             height: 67px;
+                             width: 77px;
+                             height: 77px;
                              border-radius: 50%;
                              font-size: 37px;
                              line-height: 2;
                              color: #ffffff;
-                             background-color: lightblue;
-                             transition-duration: 0.3s;
+                             background-color: darkgrey;
+                             transition-duration: 0.7s;
                              margin-right: 8px;}
 footer ul.media_buttons li a:hover,
 ul.media_buttons li a:focus,
@@ -236,7 +237,7 @@ ul media_buttons li a:active{background-color: black;}
 a.button{
 	cursor: pointer;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 	border:1px solid #ffffff; 
 	display: inline-block;
 	text-decoration: none;
@@ -245,10 +246,11 @@ a.button{
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #333;
-        border-radius: 4px; 
-        padding: 10px 15px;
+                    border-radius: 4px; 
+                    padding: 10px 15px;
 }
-a.button:hover{background-color: #5ABD5E;}
+a.button:hover{background-color: #990000;
+               text-decoration: underline;}
 
 /* ------------Форма для связи-------------- */
 
@@ -265,11 +267,11 @@ a.button:hover{background-color: #5ABD5E;}
            border-radius:4px;
            -webkit-border-radius:4px;
            -moz-border-radius:4px;color:#000;	
-          border:1px solid #AFAFAF;
-          padding:12px;
-          margin: 5px 0 10px 0;
-          font-size: 16px;
-          max-height: 45px;}
+           border:1px solid #AFAFAF;
+           padding:12px;
+           margin: 5px 0 10px 0;
+           font-size: 16px;
+           max-height: 45px;}
 
 #ff textarea {display:block;
               width:100%;
@@ -279,7 +281,7 @@ a.button:hover{background-color: #5ABD5E;}
               -moz-border-radius:4px;
               background-color:#fff;
               color:#000;
-        	border:1px solid #AFAFAF;
+        	    border:1px solid #AFAFAF;
              padding:10px;
              margin: 5px 0 25px 0;}
 
@@ -369,7 +371,7 @@ a.button:hover{background-color: #5ABD5E;}
   text-transform: uppercase;
 }
 #menu_css > ul > li:hover > a {
-  color: #162c40;
+  color: red;
 } 
 #menu_css ul ul {
   position: absolute;
@@ -705,4 +707,7 @@ a.button:hover{background-color: #5ABD5E;}
     transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
     vertical-align: middle;
     white-space: nowrap;
+}
+.row>.column_one_two>.column_wrap>img{
+  width:100;
 }
