@@ -1,29 +1,3 @@
-.info{ width: 1200px;
-       position: relative;
-       margin: 0 auto; 
-       padding: 0px;}
-.info:after { content: "\0020";
-              display: block;
-              height: 0; clear: both; 
-              visibility: hidden; }
-
-.info .f_right{float: right!important;}
-.info .f_left{float: left!important;}
-
-.info .row{}
-.info .row:before,
-.row:after { content: '\0020';
-             display: block;
-             overflow: hidden;
-             visibility: hidden;
-             width: 0;
-             height: 0; }
-.info .row:after{clear: both; }
-.info .row{zoom: 1;}
-
-.info .column_wrap{margin:10px;}
-
-
 .info .column_one_two,
 .info .column_one_three,
 .info .column_two_three,
@@ -42,7 +16,7 @@
                        display: inline-block;}
 
 .info .column_one_two,
-.info .column_one_two_fixed{width:50%;}
+.info .column_one_two_fixed{width:100%;}
 .info .offset_one_two{margin-left: 50%;}
 
 .info .column_one_three,
