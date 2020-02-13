@@ -73,14 +73,14 @@ header .header_wrap{}
 
 header .logotype img{display: inline-block;
                      margin: 0 auto 30px;
-                     max-width: 300px;
+                     max-width: 100%;
                      float: left;}
 @media all and (max-width: 768px){
 	header{padding: 0;}
 	header .logotype{text-align:center;
                    width: 100%;}
 	header .logotype img{display:block;
-                      max-width: 200px;}
+                      max-width: 100%;}
 }
 
 /* ------Контейнер------*/
@@ -154,7 +154,7 @@ header .logotype img{display: inline-block;
 .contentbox.box4 h3 {font-weight: 500; 
                      line-height: 1.2;}
 .contentbox.box4 img{margin-bottom: 30px;
-                     max-width: 250px;
+                     max-width: 100%;
                      border-radius: 50%;}
 .contentbox boxstyle2 box4>.info>.row box_wrap>.header>.wrapper>h2{text-align:center;}
 .contentbox>div>div>div>div>div>h2{text-align:center;}
